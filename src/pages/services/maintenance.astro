@@ -7,37 +7,262 @@ import FAQ from "~/components/Faq.astro";
 
 const faqItems = [
 	{
-		question: "What maintenance services do you offer?",
-		answer: "We offer a comprehensive range of maintenance services including oil changes, tire rotations, brake inspections, and fluid checks.",
+		question: "¿Cuánto tiempo toma implementar un sistema de automatización?",
+		answer: "La implementación típica toma entre 2-4 semanas dependiendo de la complejidad. Los chatbots básicos pueden estar listos en 1 semana, mientras que sistemas más avanzados con múltiples integraciones requieren más tiempo.",
 	},
 	{
-		question: "How often should I get my car serviced?",
-		answer: "It's recommended to service your car every 6 months or 5,000 miles, whichever comes first. However, always refer to your vehicle's manual for specific guidelines.",
+		question: "¿Mis clientes notarán que están hablando con IA?",
+		answer: "Nuestros sistemas están diseñados para ofrecer conversaciones naturales y humanas. La mayoría de los clientes no distinguen la diferencia, y cuando lo hacen, valoran la rapidez y disponibilidad 24/7.",
 	},
 	{
-		question: "Do you offer maintenance packages?",
-		answer: "Yes, we offer various maintenance packages tailored to meet your needs and ensure your car remains in top condition.",
+		question: "¿Qué pasa si el sistema no puede resolver una consulta?",
+		answer: "Configuramos escalación inteligente. Cuando la IA detecta que necesita ayuda humana, transfiere seamlessly la conversación a tu equipo con todo el contexto previo.",
+	},
+	{
+		question: "¿Se integra con mis sistemas actuales?",
+		answer: "Sí, trabajamos con CRMs populares como HubSpot, Salesforce, calendarios de Google/Outlook, WhatsApp Business, y la mayoría de plataformas existentes.",
+	},
+	{
+		question: "¿Cuál es el ROI típico de estas automatizaciones?",
+		answer: "Nuestros clientes ven un retorno promedio del 300-500% en el primer año, principalmente por reducción de costos operativos y aumento en conversiones de leads.",
 	},
 ];
 ---
 
-<Layout pageTitle="Maintenance" title="Maintenance">
-	<Section class:list={"bg-gray-50"}>
+<Layout pageTitle="Automatización con IA" title="Transforma tu Negocio con IA">
+	<!-- Hero Section -->
+	<Section class="bg-gradient-to-r from-blue-600 to-purple-700 text-white">
 		<Container>
-			<Heading>
-				<h1 slot="heading-title">Maintenance</h1>
-				<p slot="heading-content">
-					At HyperDrive, we offer top-notch repair services to keep your luxury car in perfect condition. Our
-					team of skilled technicians is equipped with the latest tools and technology to handle any repair
-					job, big or small.
+			<div class="text-center py-20">
+				<h1 class="text-5xl font-bold mb-6">
+					Automatiza tu Negocio con 
+					<span class="text-yellow-300">Inteligencia Artificial</span>
+				</h1>
+				<p class="text-xl mb-8 max-w-3xl mx-auto opacity-90">
+					Transforma tus chats, automatiza el agendamiento de citas y convierte más leads 
+					mientras duermes. Implementamos IA que trabaja 24/7 para hacer crecer tu negocio.
 				</p>
-			</Heading>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<a href="#contacto" 
+						class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-300 transition-colors">
+						Quiero una Demostración GRATIS
+					</a>
+					<a href="#beneficios" 
+						class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-gray-900 transition-colors">
+						Ver Cómo Funciona
+					</a>
+				</div>
+			</div>
 		</Container>
 	</Section>
 
-	<Section class:list={"bg-white"}>
+	<!-- Problema Section -->
+	<Section class="bg-red-50">
 		<Container>
+			<div class="text-center py-16">
+				<h2 class="text-4xl font-bold mb-8 text-gray-900">
+					¿Te Sientes Identificado con Esto?
+				</h2>
+				<div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+					<div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-red-500">
+						<h3 class="font-bold text-lg mb-3">📱 Pierdes clientes por respuesta lenta</h3>
+						<p class="text-gray-600">Tus leads se van a la competencia porque no respondes sus mensajes al instante</p>
+					</div>
+					<div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-red-500">
+						<h3 class="font-bold text-lg mb-3">⏰ Trabajas hasta tarde respondiendo chats</h3>
+						<p class="text-gray-600">Tu equipo está saturado contestando las mismas preguntas una y otra vez</p>
+					</div>
+					<div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-red-500">
+						<h3 class="font-bold text-lg mb-3">📅 Agendamiento caótico</h3>
+						<p class="text-gray-600">Citas perdidas, dobles reservas y un calendario desorganizado que te hace perder dinero</p>
+					</div>
+					<div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-red-500">
+						<h3 class="font-bold text-lg mb-3">💸 Oportunidades que se escapan</h3>
+						<p class="text-gray-600">No tienes tiempo para hacer seguimiento a todos tus leads potenciales</p>
+					</div>
+				</div>
+			</div>
+		</Container>
+	</Section>
+
+	<!-- Solución Section -->
+	<Section class="bg-white" id="beneficios">
+		<Container>
+			<Heading>
+				<h2 slot="heading-title">La Solución que Cambiará tu Negocio</h2>
+				<p slot="heading-content">
+					Implementamos sistemas de IA personalizados que automatizan tus procesos más repetitivos 
+					y convierten más leads mientras tú te enfocas en hacer crecer tu negocio.
+				</p>
+			</Heading>
+			
+			<div class="grid lg:grid-cols-3 gap-8 mt-12">
+				<div class="text-center p-8 bg-blue-50 rounded-xl">
+					<div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+						<span class="text-3xl">🤖</span>
+					</div>
+					<h3 class="font-bold text-xl mb-4">Chatbots Inteligentes</h3>
+					<p class="text-gray-600 mb-4">Responden automáticamente el 90% de las consultas de tus clientes, 24/7</p>
+					<ul class="text-sm text-left space-y-2">
+						<li>✅ Respuestas instantáneas</li>
+						<li>✅ Integración con WhatsApp</li>
+						<li>✅ Calificación automática de leads</li>
+						<li>✅ Escalación inteligente</li>
+					</ul>
+				</div>
+				
+				<div class="text-center p-8 bg-green-50 rounded-xl">
+					<div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+						<span class="text-3xl">📅</span>
+					</div>
+					<h3 class="font-bold text-xl mb-4">Agendamiento Automático</h3>
+					<p class="text-gray-600 mb-4">Tus clientes agendan citas por sí solos, sin que tengas que intervenir</p>
+					<ul class="text-sm text-left space-y-2">
+						<li>✅ Sincronización con tu calendario</li>
+						<li>✅ Recordatorios automáticos</li>
+						<li>✅ Reprogramación inteligente</li>
+						<li>✅ Confirmaciones por WhatsApp</li>
+					</ul>
+				</div>
+				
+				<div class="text-center p-8 bg-purple-50 rounded-xl">
+					<div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+						<span class="text-3xl">📈</span>
+					</div>
+					<h3 class="font-bold text-xl mb-4">Seguimiento de Leads</h3>
+					<p class="text-gray-600 mb-4">Nunca más pierdas un lead potencial con follow-up automático</p>
+					<ul class="text-sm text-left space-y-2">
+						<li>✅ Secuencias de seguimiento</li>
+						<li>✅ Integración con CRM</li>
+						<li>✅ Análisis de comportamiento</li>
+						<li>✅ Reportes de conversión</li>
+					</ul>
+				</div>
+			</div>
+		</Container>
+	</Section>
+
+	<!-- Resultados Section -->
+	<Section class="bg-gray-900 text-white">
+		<Container>
+			<div class="text-center py-16">
+				<h2 class="text-4xl font-bold mb-12">Resultados Reales de Nuestros Clientes</h2>
+				<div class="grid md:grid-cols-4 gap-8">
+					<div class="text-center">
+						<div class="text-5xl font-bold text-yellow-400 mb-2">85%</div>
+						<p class="text-gray-300">Reducción en tiempo de respuesta</p>
+					</div>
+					<div class="text-center">
+						<div class="text-5xl font-bold text-yellow-400 mb-2">300%</div>
+						<p class="text-gray-300">Aumento en leads calificados</p>
+					</div>
+					<div class="text-center">
+						<div class="text-5xl font-bold text-yellow-400 mb-2">24/7</div>
+						<p class="text-gray-300">Atención disponible</p>
+					</div>
+					<div class="text-center">
+						<div class="text-5xl font-bold text-yellow-400 mb-2">60%</div>
+						<p class="text-gray-300">Menos trabajo manual</p>
+					</div>
+				</div>
+			</div>
+		</Container>
+	</Section>
+
+	<!-- Testimonial -->
+	<Section class="bg-blue-50">
+		<Container>
+			<div class="text-center py-16">
+				<blockquote class="text-2xl italic text-gray-700 mb-6 max-w-4xl mx-auto">
+					"Desde que implementamos la automatización con IA, hemos triplicado nuestras ventas 
+					y recuperado 15 horas semanales que ahora invertimos en estrategia. La IA nunca duerme 
+					y siempre está convirtiendo leads."
+				</blockquote>
+				<div class="flex items-center justify-center space-x-4">
+					<div class="w-16 h-16 bg-gray-300 rounded-full"></div>
+					<div class="text-left">
+						<p class="font-bold">María González</p>
+						<p class="text-gray-600">CEO, Empresa de Servicios</p>
+					</div>
+				</div>
+			</div>
+		</Container>
+	</Section>
+
+	<!-- CTA Principal -->
+	<Section class="bg-gradient-to-r from-green-500 to-blue-600 text-white" id="contacto">
+		<Container>
+			<div class="text-center py-16">
+				<h2 class="text-4xl font-bold mb-6">
+					¿Listo para Automatizar tu Negocio?
+				</h2>
+				<p class="text-xl mb-8 opacity-90">
+					Agenda una demostración GRATUITA y descubre cómo la IA puede transformar tu negocio en 30 días
+				</p>
+				
+				<div class="bg-white text-gray-900 rounded-lg p-8 max-w-md mx-auto">
+					<h3 class="font-bold text-xl mb-4">Demostración Gratuita</h3>
+					<form class="space-y-4">
+						<input type="text" placeholder="Tu Nombre" 
+							class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" />
+						<input type="email" placeholder="Tu Email" 
+							class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" />
+						<input type="tel" placeholder="Tu Teléfono" 
+							class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" />
+						<select class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+							<option>Tipo de negocio</option>
+							<option>Servicios profesionales</option>
+							<option>E-commerce</option>
+							<option>Consultoría</option>
+							<option>Inmobiliaria</option>
+							<option>Salud y bienestar</option>
+							<option>Otro</option>
+						</select>
+						<button type="submit" 
+							class="w-full bg-gradient-to-r from-green-500 to-blue-600 text-white py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity">
+							¡Quiero Mi Demostración GRATIS!
+						</button>
+					</form>
+					<p class="text-sm text-gray-500 mt-4">
+						Sin compromiso • Demostración de 30 minutos • Resultados garantizados
+					</p>
+				</div>
+			</div>
+		</Container>
+	</Section>
+
+	<!-- FAQ -->
+	<Section class="bg-white">
+		<Container>
+			<div class="text-center mb-12">
+				<h2 class="text-4xl font-bold mb-4">Preguntas Frecuentes</h2>
+				<p class="text-xl text-gray-600">Resolvemos las dudas más comunes sobre nuestros servicios</p>
+			</div>
 			<FAQ items={faqItems} />
+		</Container>
+	</Section>
+
+	<!-- Footer CTA -->
+	<Section class="bg-gray-900 text-white">
+		<Container>
+			<div class="text-center py-12">
+				<h3 class="text-2xl font-bold mb-4">¿Tienes preguntas? ¡Hablemos!</h3>
+				<p class="text-gray-300 mb-6">Estamos aquí para ayudarte a transformar tu negocio con IA</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<a href="mailto:contacto@tuempresa.com" 
+						class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition-colors">
+						📧 Enviar Email
+					</a>
+					<a href="https://wa.me/1234567890" 
+						class="bg-green-600 hover:bg-green-700 px-6 py-3 rounded-lg transition-colors">
+						📱 WhatsApp
+					</a>
+					<a href="tel:+1234567890" 
+						class="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-lg transition-colors">
+						📞 Llamar Ahora
+					</a>
+				</div>
+			</div>
 		</Container>
 	</Section>
 </Layout>

@@ -1,0 +1,180 @@
+---
+// ShowFeatures.astro
+import { Image } from "astro:assets";
+
+// Definimos las props que acepta el componente
+interface Props {
+  modules?: string[];
+  ui?: "grid" | "carousel";
+  class?: string;
+}
+
+const { modules = [], ui = "carousel", class: className = "" } = Astro.props;
+
+// Datos de ejemplo de los módulos del software
+const featuresData = {
+  "gestion-productos": {
+    id: "gestion-productos",
+    title: "Gestión de Productos",
+    description: "Controla todo el ciclo de vida de tus productos desde la recolección hasta la venta.",
+    features: [
+      "Registro automático de recolección",
+      "Control de inventarios en tiempo real",
+      "Trazabilidad completa del producto",
+      "Predicción de demanda con IA"
+    ],
+    icon: "📦",
+    color: "bg-blue-500"
+  },
+  "pagos-automatizados": {
+    id: "pagos-automatizados",
+    title: "Pagos Automatizados",
+    description: "Sistema integral de pagos que automatiza todas las transacciones de tu asociación.",
+    features: [
+      "Pagos automáticos a productores",
+      "Integración con bancos",
+      "Gestión de anticipos",
+      "Reportes financieros detallados"
+    ],
+    icon: "💳",
+    color: "bg-green-500"
+  },
+  "contabilidad-inteligente": {
+    id: "contabilidad-inteligente",
+    title: "Contabilidad Inteligente",
+    description: "IA que maneja tu contabilidad y genera insights para mejorar la rentabilidad.",
+    features: [
+      "Contabilidad automática",
+      "Análisis de rentabilidad por producto",
+      "Predicción de flujo de caja",
+      "Reportes regulatorios automáticos"
+    ],
+    icon: "📊",
+    color: "bg-purple-500"
+  }
+};
+
+// Filtramos solo los módulos solicitados
+const selectedFeatures = modules.length > 0 
+// @ts-ignore
+  ? modules.map((slug: any) => featuresData[slug as any] as any).filter(Boolean)
+  : Object.values(featuresData);
+---
+
+<div class={`features-container ${className}`}>
+  {ui === "grid" ? (
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {selectedFeatures.map((feature) => (
+        <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+          <div class={`${feature.color} p-6 text-white`}>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-3xl">{feature.icon}</span>
+              <div class="bg-white/20 rounded-full p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold mb-2">{feature.title}</h3>
+            <p class="text-white/90 text-sm">{feature.description}</p>
+          </div>
+          
+          <div class="p-6">
+            <h4 class="font-semibold text-gray-900 mb-3">Características principales:</h4>
+            <ul class="space-y-2">
+              {feature.features.map((item: any) => (
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span class="text-gray-700 text-sm">{item}</span>
+                </li>
+              ))}
+            </ul>
+            
+            <div class="mt-6">
+              <a 
+                href={`/modulos/${feature.id}`}
+                class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium text-sm transition-colors"
+              >
+                Más información
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  ) : (
+    <!-- Carousel version -->
+    <div class="carousel-container relative">
+      <div class="flex overflow-x-auto gap-6 pb-4 snap-x snap-mandatory scrollbar-hide">
+        {selectedFeatures.map((feature) => (
+          <div class="flex-shrink-0 w-80 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden snap-start">
+            <div class={`${feature.color} p-6 text-white`}>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-3xl">{feature.icon}</span>
+                <div class="bg-white/20 rounded-full p-2">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+              </div>
+              <h3 class="text-xl font-bold mb-2">{feature.title}</h3>
+              <p class="text-white/90 text-sm">{feature.description}</p>
+            </div>
+            
+            <div class="p-6">
+              <h4 class="font-semibold text-gray-900 mb-3">Características principales:</h4>
+              <ul class="space-y-2">
+                {feature.features.map((item: any) => (
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="text-gray-700 text-sm">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              
+              <div class="mt-6">
+                <a 
+                  href={`/modulos/${feature.id}`}
+                  class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium text-sm transition-colors"
+                >
+                  Más información
+                  <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )}
+</div>
+
+<style>
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .carousel-container::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 40px;
+    background: linear-gradient(to right, transparent, white);
+    pointer-events: none;
+  }
+</style>

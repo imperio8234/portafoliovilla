@@ -7,24 +7,26 @@ export const menuMain: MainMenuItem[] = [
 		url: "/",
 	},
 	{
-		id: "cars",
-		label: "Cars",
-		url: "/cars",
+		id: "solu",
+		label: "Soluciones",
+		url: "/soluciones",
 	},
 	{
 		id: "about",
 		label: "About",
 		url: "/about-us",
-		submenu: [{ id: "testimonials", label: "Testimonials", url: "/about-us/testimonials" }],
+		submenu: [
+			{ id: "testimonials", label: "Testimonials", url: "/about-us/testimonials" },
+		],
 	},
 	{
-		id: "services",
-		label: "Services",
+		id: "servicios",
+		label: "Servicios",
 		url: "/services",
 		submenu: [
-			{ id: "repairs", label: "Repairs", url: "/services/repairs" },
-			{ id: "maintenance", label: "Maintenance", url: "/services/maintenance" },
-			{ id: "car-sales", label: "Car Sales", url: "/services/car-sales" },
+			{ id: "desarrollo", label: "Desarrollo a medida", url: "/services/desarrollo" },
+			{ id: "mantenimiento", label: "Mantenimiento y soporte", url: "/services/mantenimiento" },
+			{ id: "automatizaciones", label: "Automatizaciones con IA", url: "/services/automatizaciones" },
 		],
 	},
 	{
@@ -37,103 +39,43 @@ export const menuMain: MainMenuItem[] = [
 export const menuNavigation: MenuNavigation = {
 	prettyName: "Navigation",
 	items: [
-		{
-			name: "Home",
-			url: "/",
-		},
-		{
-			name: "Cars",
-			url: "/cars",
-		},
-		{
-			name: "About Us",
-			url: "/about-us",
-		},
-		{
-			name: "Services",
-			url: "/services",
-		},
-		{
-			name: "Blog",
-			url: "/blog",
-		},
+		{ name: "Home", url: "/" },
+		{ name: "Soluciones", url: "/soluciones" },
+		{ name: "About Us", url: "/about-us" },
+		{ name: "Servicios", url: "/servicios" },
+		{ name: "Blog", url: "/blog" },
 	],
 };
 
 export const menuService: MenuNavigation = {
 	prettyName: "Service",
 	items: [
-		{
-			name: "Home",
-			url: "/",
-		},
-		{
-			name: "Cars",
-			url: "/cars",
-		},
-		{
-			name: "About Us",
-			url: "/about-us",
-		},
-		{
-			name: "Services",
-			url: "/services",
-		},
-		{
-			name: "Blog",
-			url: "/blog",
-		},
+		{ name: "Home", url: "/" },
+		{ name: "Soluciones", url: "/soluciones" },
+		{ name: "About Us", url: "/about-us" },
+		{ name: "Servicios", url: "/servicios" },
+		{ name: "Blog", url: "/blog" },
 	],
 };
 
 export const menuMisc: MenuNavigation = {
 	prettyName: "Miscellaneous",
 	items: [
-		{
-			name: "Home",
-			url: "/",
-		},
-		{
-			name: "Cars",
-			url: "/cars",
-		},
-		{
-			name: "About Us",
-			url: "/about-us",
-		},
-		{
-			name: "Services",
-			url: "/services",
-		},
-		{
-			name: "Blog",
-			url: "/blog",
-		},
+		{ name: "Home", url: "/" },
+		{ name: "Soluciones", url: "/soluciones" },
+		{ name: "About Us", url: "/about-us" },
+		{ name: "Servicios", url: "/servicios" },
+		{ name: "Blog", url: "/blog" },
 	],
 };
 
 export const menuLegal: MenuNavigation = {
 	prettyName: "Legal",
 	items: [
-		{
-			name: "Home",
-			url: "/",
-		},
-		{
-			name: "Cars",
-			url: "/cars",
-		},
-		{
-			name: "About Us",
-			url: "/about-us",
-		},
-		{
-			name: "Services",
-			url: "/services",
-		},
-		{
-			name: "Blog",
-			url: "/blog",
-		},
+		{ name: "Home", url: "/" },
+		{ name: "Soluciones", url: "/soluciones" },
+		{ name: "About Us", url: "/about-us" },
+		{ name: "Servicios", url: "/servicios" },
+		{ name: "Blog", url: "/blog" },
 	],
 };
