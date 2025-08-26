@@ -1,0 +1,78 @@
+---
+import Layout from "~/layouts/Layout.astro";
+---
+
+<Layout>
+  <main class="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+    
+    <!-- Simple Header -->
+    <div class="py-8 text-center">
+      <h1 class="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent mb-2">
+        Solicita tu Software de Gestión
+      </h1>
+      <p class="text-gray-600 max-w-2xl mx-auto px-4">
+        Moderniza la gestión de tu asociación con nuestra plataforma integral
+      </p>
+    </div>
+
+    <!-- Full Width Form Container -->
+    <div class="px-4 pb-8 h-[1400px]">
+      <div class="max-w-5xl  mx-auto flex justify-center">
+        
+
+        <!-- Google Form Iframe -->
+       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc11wpEwLdpfRN3BWZ2K3KHvhO1Ce_1PwJGOGDdo6S4BovbIA/viewform?embedded=true" width="640" height="1361" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+    </div>
+
+    <!-- Simple Footer -->
+    <div class="text-center pb-8">
+      <p class="text-sm text-gray-500">
+        <span class="inline-flex items-center gap-1">
+          <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          Datos protegidos bajo GDPR
+        </span>
+        • Respuesta en 24h • Más de 500+ asociaciones confían en nosotros
+      </p>
+    </div>
+  </main>
+
+  <script>
+    declare global {
+      interface Window {
+        handleFormLoad: () => void;
+      }
+    }
+
+    window.handleFormLoad = (): void => {
+      const loading = document.getElementById('form-loading');
+      const iframe = document.getElementById('google-form') as HTMLIFrameElement;
+      
+      if (loading) {
+        loading.style.display = 'none';
+      }
+      
+      if (iframe) {
+        iframe.style.opacity = '1';
+      }
+    };
+
+    // Fallback in case onload doesn't fire
+    document.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => {
+        const loading = document.getElementById('form-loading');
+        const iframe = document.getElementById('google-form') as HTMLIFrameElement;
+        
+        if (loading && loading.style.display !== 'none') {
+          loading.style.display = 'none';
+          if (iframe) {
+            iframe.style.opacity = '1';
+          }
+        }
+      }, 3000);
+    });
+  </script>
+  
+</Layout>
