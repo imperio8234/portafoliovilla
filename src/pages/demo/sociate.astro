@@ -2,42 +2,70 @@
 import Layout from "~/layouts/Layout.astro";
 ---
 
-<Layout title="Demo - Software Integral para Asociaciones Agrarias" pageTitle="Transforma tu Asociación">
+<Layout
+  title="Demo - Software Integral para Asociaciones Agrarias"
+  pageTitle="Transforma tu Asociación"
+>
   <main class="min-h-screen">
     <!-- Hero Section con Problema Principal -->
-    <section class="bg-gradient-to-br from-red-600 via-orange-600 to-yellow-500 min-h-screen flex items-center relative overflow-hidden">
+    <section
+      class="bg-gradient-to-br from-red-600 via-orange-600 to-yellow-500 min-h-screen flex items-center relative overflow-hidden"
+    >
       <!-- Elementos decorativos flotantes -->
-      <div class="absolute top-20 left-10 w-32 h-32 bg-white bg-opacity-10 rounded-full animate-bounce" style="animation-delay: 0s; animation-duration: 3s;"></div>
-      <div class="absolute bottom-20 right-10 w-24 h-24 bg-white bg-opacity-10 rounded-full animate-bounce" style="animation-delay: 1s; animation-duration: 4s;"></div>
-      <div class="absolute top-1/2 right-20 w-16 h-16 bg-white bg-opacity-10 rounded-full animate-pulse"></div>
-      
-      <div class="container mx-auto px-4 z-10 max-w-7xl">
-       
+      <div
+        class="absolute top-20 left-10 w-32 h-32 bg-white bg-opacity-10 rounded-full animate-bounce"
+        style="animation-delay: 0s; animation-duration: 3s;"
+      >
+      </div>
+      <div
+        class="absolute bottom-20 right-10 w-24 h-24 bg-white bg-opacity-10 rounded-full animate-bounce"
+        style="animation-delay: 1s; animation-duration: 4s;"
+      >
+      </div>
+      <div
+        class="absolute top-1/2 right-20 w-16 h-16 bg-white bg-opacity-10 rounded-full animate-pulse"
+      >
+      </div>
 
+      <div class="container mx-auto px-4 z-10 max-w-7xl">
         <div class="text-center text-white mb-12">
-          <h1 class="text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight">
-            ¿Tu Asociación Está 
-            <span class="text-yellow-300 animate-pulse">Perdiendo Dinero y oportunidades</span>
-            <br>por Falta de Control?
+          <h1
+            class="text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight"
+          >
+            ¿Tu Asociación Está
+            <span class="text-yellow-300 animate-pulse"
+              >Perdiendo Dinero y oportunidades</span
+            >
+            <br />por Falta de Control?
           </h1>
-          
-          <p class="text-lg md:text-xl lg:text-2xl text-orange-100 mb-8 max-w-4xl mx-auto leading-relaxed font-medium">
-            <strong class="text-yellow-300">¡BASTA de pérdidas millonarias!</strong> La plataforma en Colombiana que combina 
-            gestión completa de tu asociacion  + Agrónomo Virtual para los asociados con IA que podra reducir sus pedidas
+
+          <p
+            class="text-lg md:text-xl lg:text-2xl text-orange-100 mb-8 max-w-4xl mx-auto leading-relaxed font-medium"
+          >
+            <strong class="text-yellow-300"
+              >¡BASTA de pérdidas millonarias!</strong
+            > La plataforma en Colombiana que combina gestión completa de tu asociacion
+            + Agrónomo Virtual para los asociados con IA que podra reducir sus pedidas
           </p>
         </div>
 
         <!-- Problemas críticos - Grid -->
         <div class="grid md:grid-cols-2 gap-6 mb-12 max-w-4xl mx-auto">
-          <div class="bg-white/20 backdrop-blur-sm p-6 rounded-2xl border border-white/30 hover:bg-white/30 transition-all duration-300">
+          <div
+            class="bg-white/20 backdrop-blur-sm p-6 rounded-2xl border border-white/30 hover:bg-white/30 transition-all duration-300"
+          >
             <div class="flex items-center mb-4">
-              <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center mr-4">
+              <div
+                class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center mr-4"
+              >
                 <span class="text-2xl">💰</span>
               </div>
               <h3 class="text-xl font-bold text-white">Pérdidas Financieras</h3>
             </div>
             <ul class="text-orange-100 space-y-2 text-sm">
-              <li>• Errores en pagos y recolecciones de productos de sus asociados</li>
+              <li>
+                • Errores en pagos y recolecciones de productos de sus asociados
+              </li>
               <li>• Errores en pagos por cálculos manuales</li>
               <li>• Pérdida de control en recaudos</li>
               <li>• Asociados desconfiados y molestos</li>
@@ -45,15 +73,21 @@ import Layout from "~/layouts/Layout.astro";
             </ul>
           </div>
 
-          <div class="bg-white/20 backdrop-blur-sm p-6 rounded-2xl border border-white/30 hover:bg-white/30 transition-all duration-300">
+          <div
+            class="bg-white/20 backdrop-blur-sm p-6 rounded-2xl border border-white/30 hover:bg-white/30 transition-all duration-300"
+          >
             <div class="flex items-center mb-4">
-              <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mr-4">
+              <div
+                class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mr-4"
+              >
                 <span class="text-2xl">🐛</span>
               </div>
               <h3 class="text-xl font-bold text-white">Pérdidas de Cultivos</h3>
             </div>
             <ul class="text-orange-100 space-y-2 text-sm">
-              <li>• <strong>40% de pérdidas por enfermedades tardías</strong></li>
+              <li>
+                • <strong>40% de pérdidas por enfermedades tardías</strong>
+              </li>
               <li>• Tratamientos mal aplicados</li>
               <li>• Sin agrónomo disponible 24/7</li>
               <li>• Diagnósticos cuando ya es tarde</li>
@@ -63,33 +97,41 @@ import Layout from "~/layouts/Layout.astro";
 
         <!-- Call to Action Principal -->
         <div class="text-center">
-          <div class="bg-white/10 backdrop-blur-sm p-8 rounded-3xl border border-white/30 max-w-2xl mx-auto">
+          <div
+            class="bg-white/10 backdrop-blur-sm p-8 rounded-3xl border border-white/30 max-w-2xl mx-auto"
+          >
             <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">
               🚀 Ve la Solución en Acción
             </h2>
             <p class="text-orange-100 mb-6 text-lg">
-              Descubre cómo otras asociaciones eliminaron sus pérdidas con nuestra demo personalizada
+              Descubre cómo otras asociaciones eliminaron sus pérdidas con
+              nuestra demo personalizada
             </p>
-            
+
             <div class="space-y-4">
-              <button 
-                id="btnDemoPersonalizada" 
+              <button
+                id="btnDemoPersonalizadademo"
                 class="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-4 px-8 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-lg"
               >
                 📞 Solicitar Demo Personalizada GRATIS
               </button>
-              
-              <button 
-                id="btnPruebaRapida" 
+
+              <button
+                id="btnPruebaRapidademo"
                 class="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-4 px-8 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-lg border-2 border-white/30"
               >
                 ⚡ Acceso Inmediato - Prueba 30 Días
               </button>
             </div>
 
-            <div class="flex items-center justify-center mt-4 text-yellow-300 text-sm">
+            <div
+              class="flex items-center justify-center mt-4 text-yellow-300 text-sm"
+            >
               <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
               </svg>
               Sin compromiso • Configuración incluida • Soporte completo
             </div>
@@ -102,15 +144,21 @@ import Layout from "~/layouts/Layout.astro";
     <section class="py-20 bg-white">
       <div class="container mx-auto px-4 max-w-7xl">
         <div class="text-center mb-16">
-          <div class="inline-flex items-center bg-green-100 text-green-800 px-6 py-3 rounded-full text-sm font-bold mb-6">
+          <div
+            class="inline-flex items-center bg-green-100 text-green-800 px-6 py-3 rounded-full text-sm font-bold mb-6"
+          >
             ✅ LA SOLUCIÓN QUE CAMBIA TODO
           </div>
-          <h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 mb-6">
-            Convierte las Pérdidas en 
+          <h2
+            class="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 mb-6"
+          >
+            Convierte las Pérdidas en
             <span class="text-green-600">Ganancias</span>
           </h2>
           <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            La única plataforma que <strong>ahorra hasta 30% en costos operativos</strong> 
+            La única plataforma que <strong
+              >ahorra hasta 30% en costos operativos</strong
+            >
             y evita pérdidas millonarias en cultivos
           </p>
         </div>
@@ -118,13 +166,20 @@ import Layout from "~/layouts/Layout.astro";
         <!-- Beneficios principales -->
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Beneficio 1 -->
-          <div class="group p-8 rounded-3xl shadow-xl bg-gradient-to-br from-white to-gray-50 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
-            <div class="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+          <div
+            class="group p-8 rounded-3xl shadow-xl bg-gradient-to-br from-white to-gray-50 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+            >
               <span class="text-3xl">💰</span>
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">Control Total de Pagos</h3>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">
+              Control Total de Pagos
+            </h3>
             <p class="text-gray-600 mb-4">
-              Elimina errores humanos, pagos incorrectos y desconfianza entre asociados
+              Elimina errores humanos, pagos incorrectos y desconfianza entre
+              asociados
             </p>
             <div class="bg-green-50 p-3 rounded-lg border border-green-200">
               <p class="text-green-800 font-semibold text-sm">
@@ -134,11 +189,17 @@ import Layout from "~/layouts/Layout.astro";
           </div>
 
           <!-- Beneficio 2 -->
-          <div class="group p-8 rounded-3xl shadow-xl bg-gradient-to-br from-white to-gray-50 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
-            <div class="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+          <div
+            class="group p-8 rounded-3xl shadow-xl bg-gradient-to-br from-white to-gray-50 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+            >
               <span class="text-3xl">🤖</span>
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">Agrónomo IA 24/7</h3>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">
+              Agrónomo IA 24/7
+            </h3>
             <p class="text-gray-600 mb-4">
               Diagnóstico inmediato de enfermedades y tratamientos precisos
             </p>
@@ -150,11 +211,17 @@ import Layout from "~/layouts/Layout.astro";
           </div>
 
           <!-- Beneficio 3 -->
-          <div class="group p-8 rounded-3xl shadow-xl bg-gradient-to-br from-white to-gray-50 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
-            <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+          <div
+            class="group p-8 rounded-3xl shadow-xl bg-gradient-to-br from-white to-gray-50 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+          >
+            <div
+              class="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+            >
               <span class="text-3xl">📊</span>
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">gestion total de ventas y recolecciones de productos</h3>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">
+              gestion total de ventas y recolecciones de productos
+            </h3>
             <p class="text-gray-600 mb-4">
               Reportes claros, trazabilidad y gestion de sus recolecciones
             </p>
@@ -169,7 +236,9 @@ import Layout from "~/layouts/Layout.astro";
     </section>
 
     <!-- Sección de Urgencia -->
-    <section class="py-20 bg-gradient-to-r from-red-500 to-orange-500 text-white">
+    <section
+      class="py-20 bg-gradient-to-r from-red-500 to-orange-500 text-white"
+    >
       <div class="container mx-auto px-4 max-w-6xl">
         <div class="text-center">
           <h2 class="text-3xl md:text-4xl lg:text-5xl font-black mb-6">
@@ -182,27 +251,38 @@ import Layout from "~/layouts/Layout.astro";
             </div>
             <div class="bg-white/20 backdrop-blur-sm p-6 rounded-2xl">
               <div class="text-4xl font-black text-yellow-300 mb-2">40%</div>
-              <p class="text-lg">De cultivos se pierden por diagnóstico tardío</p>
+              <p class="text-lg">
+                De cultivos se pierden por diagnóstico tardío
+              </p>
             </div>
             <div class="bg-white/20 backdrop-blur-sm p-6 rounded-2xl">
               <div class="text-4xl font-black text-yellow-300 mb-2">72h</div>
               <p class="text-lg">Para que una enfermedad sea irreversible</p>
             </div>
           </div>
-          
-          <div class="bg-white/10 backdrop-blur-sm p-8 rounded-3xl max-w-4xl mx-auto">
-            <h3 class="text-2xl font-bold mb-4">🎯 Oferta Limitada - Primeras 10 Asociaciones</h3>
+
+          <div
+            class="bg-white/10 backdrop-blur-sm p-8 rounded-3xl max-w-4xl mx-auto"
+          >
+            <h3 class="text-2xl font-bold mb-4">
+              🎯 Oferta Limitada - Primeras 10 Asociaciones
+            </h3>
             <div class="text-lg space-y-2 mb-6">
               <p>✅ <strong>Prueba GRATIS por 30 días</strong></p>
               <p>✅ <strong>Configuración e implementación incluida</strong></p>
               <p>✅ <strong>Capacitación completa del equipo</strong></p>
               <p>✅ <strong>Soporte técnico prioritario</strong></p>
-              <p class="text-yellow-300">🔥 <strong>Descuento del 40% el primer año</strong></p>
+              <p class="text-yellow-300">
+                🔥 <strong>Descuento del 40% el primer año</strong>
+              </p>
             </div>
-            
+
             <!-- Contador de urgencia -->
             <div class="bg-red-600/30 p-4 rounded-xl mb-6">
-              <p class="text-lg font-bold">⏳ Solo quedan <span class="text-yellow-300 text-2xl">7</span> cupos disponibles</p>
+              <p class="text-lg font-bold">
+                ⏳ Solo quedan <span class="text-yellow-300 text-2xl">7</span> cupos
+                disponibles
+              </p>
             </div>
           </div>
         </div>
@@ -223,34 +303,66 @@ import Layout from "~/layouts/Layout.astro";
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- WhatsApp -->
-          <div class="group bg-gradient-to-br from-white to-gray-100 p-8 rounded-3xl shadow-2xl text-center hover:scale-105 transition-all duration-300">
-            <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-green-600 transition-colors">
-              <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.382"/>
+          <div
+            class="group bg-gradient-to-br from-white to-gray-100 p-8 rounded-3xl shadow-2xl text-center hover:scale-105 transition-all duration-300"
+          >
+            <div
+              class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-green-600 transition-colors"
+            >
+              <svg
+                class="w-10 h-10 text-white"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.382"
+                ></path>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-gray-800 mb-4">WhatsApp Directo</h3>
-            <p class="text-gray-600 mb-6">Respuesta inmediata de nuestro especialista</p>
-            <button 
-              id="btnWhatsApp" 
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">
+              WhatsApp Directo
+            </h3>
+            <p class="text-gray-600 mb-6">
+              Respuesta inmediata de nuestro especialista
+            </p>
+            <button
+              id="btnWhatsApp"
               class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-2xl transition-all duration-300"
             >
               Chatear Ahora
             </button>
-            <p class="text-xs text-gray-500 mt-2">Respuesta en menos de 2 minutos</p>
+            <p class="text-xs text-gray-500 mt-2">
+              Respuesta en menos de 2 minutos
+            </p>
           </div>
 
           <!-- Llamada Telefónica -->
-          <div class="group bg-gradient-to-br from-white to-gray-100 p-8 rounded-3xl shadow-2xl text-center hover:scale-105 transition-all duration-300">
-            <div class="w-20 h-20 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-600 transition-colors">
-              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+          <div
+            class="group bg-gradient-to-br from-white to-gray-100 p-8 rounded-3xl shadow-2xl text-center hover:scale-105 transition-all duration-300"
+          >
+            <div
+              class="w-20 h-20 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-600 transition-colors"
+            >
+              <svg
+                class="w-10 h-10 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                ></path>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-gray-800 mb-4">Llamada Telefónica</h3>
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">
+              Llamada Telefónica
+            </h3>
             <p class="text-gray-600 mb-6">Demo personalizada por teléfono</p>
-            <button 
-              id="btnLlamar" 
+            <button
+              id="btnLlamar"
               class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-2xl transition-all duration-300"
             >
               Llamar Ahora
@@ -259,16 +371,32 @@ import Layout from "~/layouts/Layout.astro";
           </div>
 
           <!-- Formulario Rápido -->
-          <div class="group bg-gradient-to-br from-white to-gray-100 p-8 rounded-3xl shadow-2xl text-center hover:scale-105 transition-all duration-300">
-            <div class="w-20 h-20 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-purple-600 transition-colors">
-              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+          <div
+            class="group bg-gradient-to-br from-white to-gray-100 p-8 rounded-3xl shadow-2xl text-center hover:scale-105 transition-all duration-300"
+          >
+            <div
+              class="w-20 h-20 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-purple-600 transition-colors"
+            >
+              <svg
+                class="w-10 h-10 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                ></path>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-gray-800 mb-4">Formulario Rápido</h3>
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">
+              Formulario Rápido
+            </h3>
             <p class="text-gray-600 mb-6">Te contactamos en menos de 1 hora</p>
-            <button 
-              id="btnFormulario" 
+            <button
+              id="btnFormulario"
               class="w-full bg-purple-500 hover:bg-purple-600 text-white font-bold py-3 px-6 rounded-2xl transition-all duration-300"
             >
               Llenar Formulario
@@ -279,23 +407,33 @@ import Layout from "~/layouts/Layout.astro";
 
         <!-- Garantía y confianza -->
         <div class="mt-16 text-center">
-          <div class="bg-gradient-to-r from-green-500/20 to-blue-500/20 backdrop-blur-sm p-8 rounded-3xl border border-green-500/30 max-w-4xl mx-auto">
-            <h3 class="text-2xl font-bold mb-4">🛡️ Garantía de Satisfacción Total</h3>
+          <div
+            class="bg-gradient-to-r from-green-500/20 to-blue-500/20 backdrop-blur-sm p-8 rounded-3xl border border-green-500/30 max-w-4xl mx-auto"
+          >
+            <h3 class="text-2xl font-bold mb-4">
+              🛡️ Garantía de Satisfacción Total
+            </h3>
             <div class="grid md:grid-cols-3 gap-6">
               <div class="text-center">
                 <div class="text-3xl mb-2">💰</div>
                 <p class="font-semibold">Devolución del 100%</p>
-                <p class="text-sm text-gray-300">Si no ahorras dinero en 30 días</p>
+                <p class="text-sm text-gray-300">
+                  Si no ahorras dinero en 30 días
+                </p>
               </div>
               <div class="text-center">
                 <div class="text-3xl mb-2">🚀</div>
                 <p class="font-semibold">Implementación Gratis</p>
-                <p class="text-sm text-gray-300">Configuración completa incluida</p>
+                <p class="text-sm text-gray-300">
+                  Configuración completa incluida
+                </p>
               </div>
               <div class="text-center">
                 <div class="text-3xl mb-2">📞</div>
                 <p class="font-semibold">Soporte 24/7</p>
-                <p class="text-sm text-gray-300">Asistencia técnica permanente</p>
+                <p class="text-sm text-gray-300">
+                  Asistencia técnica permanente
+                </p>
               </div>
             </div>
           </div>
@@ -311,7 +449,8 @@ import Layout from "~/layouts/Layout.astro";
             📝 Te Contactamos en Menos de 1 Hora
           </h2>
           <p class="text-xl text-gray-600">
-            Déjanos tus datos y te llamamos para mostrarte exactamente cómo resolver los problemas de tu asociación
+            Déjanos tus datos y te llamamos para mostrarte exactamente cómo
+            resolver los problemas de tu asociación
           </p>
         </div>
 
@@ -319,67 +458,82 @@ import Layout from "~/layouts/Layout.astro";
           <form id="contactForm" class="space-y-6">
             <div class="grid md:grid-cols-2 gap-6">
               <div>
-                <label for="nombre" class="block text-sm font-bold text-gray-700 mb-2">
+                <label
+                  for="nombre"
+                  class="block text-sm font-bold text-gray-700 mb-2"
+                >
                   Nombre Completo *
                 </label>
-                <input 
-                  type="text" 
-                  id="nombre" 
+                <input
+                  type="text"
+                  id="nombre"
                   name="nombre"
                   required
                   class="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                   placeholder="Tu nombre completo"
                 />
               </div>
-              
+
               <div>
-                <label for="telefono" class="block text-sm font-bold text-gray-700 mb-2">
+                <label
+                  for="telefono"
+                  class="block text-sm font-bold text-gray-700 mb-2"
+                >
                   Teléfono/WhatsApp *
                 </label>
-                <input 
-                  type="tel" 
-                  id="telefono" 
+                <input
+                  type="tel"
+                  id="telefono"
                   name="telefono"
                   required
                   class="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                   placeholder="300 123 4567"
                 />
               </div>
-              
+
               <div>
-                <label for="asociacion" class="block text-sm font-bold text-gray-700 mb-2">
+                <label
+                  for="asociacion"
+                  class="block text-sm font-bold text-gray-700 mb-2"
+                >
                   Nombre de la Asociación *
                 </label>
-                <input 
-                  type="text" 
-                  id="asociacion" 
+                <input
+                  type="text"
+                  id="asociacion"
                   name="asociacion"
                   required
                   class="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                   placeholder="Nombre de tu asociación"
                 />
               </div>
-              
+
               <div>
-                <label for="municipio" class="block text-sm font-bold text-gray-700 mb-2">
+                <label
+                  for="municipio"
+                  class="block text-sm font-bold text-gray-700 mb-2"
+                >
                   Municipio *
                 </label>
-                <input 
-                  type="text" 
-                  id="municipio" 
+                <input
+                  type="text"
+                  id="municipio"
                   name="municipio"
                   required
                   class="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                   placeholder="Ciudad/Municipio"
                 />
               </div>
-              
+
               <div>
-                <label for="productos" class="block text-sm font-bold text-gray-700 mb-2">
+                <label
+                  for="productos"
+                  class="block text-sm font-bold text-gray-700 mb-2"
+                >
                   Productos Principales *
                 </label>
-                <select 
-                  id="productos" 
+                <select
+                  id="productos"
                   name="productos"
                   required
                   class="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
@@ -395,13 +549,16 @@ import Layout from "~/layouts/Layout.astro";
                   <option value="otro">Otro</option>
                 </select>
               </div>
-              
+
               <div>
-                <label for="asociados" class="block text-sm font-bold text-gray-700 mb-2">
+                <label
+                  for="asociados"
+                  class="block text-sm font-bold text-gray-700 mb-2"
+                >
                   Número de Asociados *
                 </label>
-                <select 
-                  id="asociados" 
+                <select
+                  id="asociados"
                   name="asociados"
                   required
                   class="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
@@ -415,13 +572,16 @@ import Layout from "~/layouts/Layout.astro";
                 </select>
               </div>
             </div>
-            
+
             <div>
-              <label for="problemas" class="block text-sm font-bold text-gray-700 mb-2">
+              <label
+                for="problemas"
+                class="block text-sm font-bold text-gray-700 mb-2"
+              >
                 ¿Cuál es tu mayor problema actual? *
               </label>
-              <textarea 
-                id="problemas" 
+              <textarea
+                id="problemas"
                 name="problemas"
                 required
                 rows="3"
@@ -429,13 +589,16 @@ import Layout from "~/layouts/Layout.astro";
                 placeholder="Describe brevemente cuál es el problema más urgente que enfrentas (ej: pérdidas por pagos incorrectos, enfermedades en cultivos, falta de control, etc.)"
               ></textarea>
             </div>
-            
+
             <div>
-              <label for="horario" class="block text-sm font-bold text-gray-700 mb-2">
+              <label
+                for="horario"
+                class="block text-sm font-bold text-gray-700 mb-2"
+              >
                 ¿Cuándo prefieres que te contactemos? *
               </label>
-              <select 
-                id="horario" 
+              <select
+                id="horario"
                 name="horario"
                 required
                 class="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
@@ -449,7 +612,9 @@ import Layout from "~/layouts/Layout.astro";
             </div>
 
             <div class="bg-blue-50 p-6 rounded-2xl border border-blue-200">
-              <h4 class="font-bold text-blue-900 mb-3">📞 ¿Qué vas a recibir?</h4>
+              <h4 class="font-bold text-blue-900 mb-3">
+                📞 ¿Qué vas a recibir?
+              </h4>
               <ul class="text-blue-800 space-y-2 text-sm">
                 <li>✅ Llamada personalizada en menos de 1 hora</li>
                 <li>✅ Demo en vivo adaptada a tu tipo de asociación</li>
@@ -460,35 +625,56 @@ import Layout from "~/layouts/Layout.astro";
             </div>
 
             <div class="flex items-start gap-3">
-              <input 
-                type="checkbox" 
-                id="acepto" 
+              <input
+                type="checkbox"
+                id="acepto"
                 required
                 class="mt-1 w-5 h-5 text-blue-600 bg-white border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
               />
               <label for="acepto" class="text-sm text-gray-700">
-                Acepto que me contacten para recibir información sobre el software y autorizo el tratamiento de mis datos personales según la política de privacidad. <span class="text-red-500">*</span>
+                Acepto que me contacten para recibir información sobre el
+                software y autorizo el tratamiento de mis datos personales según
+                la política de privacidad. <span class="text-red-500">*</span>
               </label>
             </div>
 
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-              <button 
+              <button
                 type="submit"
                 class="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold py-4 px-8 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3"
               >
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  ></path>
                 </svg>
                 <span>📞 Que me Contacten Ahora</span>
               </button>
-              
-              <button 
+
+              <button
                 type="button"
                 id="btnCerrarFormulario"
                 class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-4 px-8 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3"
               >
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
                 </svg>
                 <span>Volver</span>
               </button>
@@ -501,170 +687,201 @@ import Layout from "~/layouts/Layout.astro";
 
   <!-- JavaScript -->
   <script>
+    //@ts-nocheck
     // Configuración
     const CONFIG = {
       whatsappNumber: "573205318658",
       phoneNumber: "+573205318658",
-      companyEmail: "demo@tuempresa.com"
+      companyEmail: "demo@tuempresa.com",
     } as const;
 
     // Mensajes predefinidos
     const MESSAGES = {
       whatsappDemo: encodeURIComponent(
         "🚨 ¡Hola! Vengo de la página web y NECESITO URGENTE una solución para mi asociación.\n\n" +
-        "Estamos perdiendo dinero por:\n" +
-        "• Errores en pagos y recaudos\n" +
-        "• Falta de control en cultivos\n" +
-        "• Problemas de transparencia\n\n" +
-        "Quiero ver la DEMO PERSONALIZADA del software + Agrónomo IA que puede salvar nuestros cultivos.\n\n" +
-        "¿Podemos agendar una demo HOY?"
+          "Estamos perdiendo dinero por:\n" +
+          "• Errores en pagos y recaudos\n" +
+          "• Falta de control en cultivos\n" +
+          "• Problemas de transparencia\n\n" +
+          "Quiero ver la DEMO PERSONALIZADA del software + Agrónomo IA que puede salvar nuestros cultivos.\n\n" +
+          "¿Podemos agendar una demo HOY?",
       ),
       whatsappTrial: encodeURIComponent(
         "🚀 ¡Hola! Quiero acceso INMEDIATO a la prueba de 30 días del software para asociaciones.\n\n" +
-        "He visto que pueden ayudarme con:\n" +
-        "✅ Control automático de pagos\n" +
-        "✅ Agrónomo Virtual con IA\n" +
-        "✅ Gestión transparente\n\n" +
-        "¿Cómo puedo empezar HOY mismo?"
-      )
+          "He visto que pueden ayudarme con:\n" +
+          "✅ Control automático de pagos\n" +
+          "✅ Agrónomo Virtual con IA\n" +
+          "✅ Gestión transparente\n\n" +
+          "¿Cómo puedo empezar HOY mismo?",
+      ),
     } as const;
 
     // Event Listeners
-    document.addEventListener('DOMContentLoaded', () => {
-      // Elementos del DOM
-      const btnDemoPersonalizada = document.getElementById('btnDemoPersonalizada') as HTMLButtonElement;
-      const btnPruebaRapida = document.getElementById('btnPruebaRapida') as HTMLButtonElement;
-      const btnWhatsApp = document.getElementById('btnWhatsApp') as HTMLButtonElement;
-      const btnLlamar = document.getElementById('btnLlamar') as HTMLButtonElement;
-      const btnFormulario = document.getElementById('btnFormulario') as HTMLButtonElement;
-      const btnCerrarFormulario = document.getElementById('btnCerrarFormulario') as HTMLButtonElement;
-      const formularioContacto = document.getElementById('formularioContacto') as HTMLElement;
-      const contactForm = document.getElementById('contactForm') as HTMLFormElement;
-
-      // Función para abrir WhatsApp
-      const openWhatsApp = (message: string): void => {
-        const url = `https://wa.me/${CONFIG.whatsappNumber}?text=${message}`;
-        window.open(url, '_blank');
+    // Script corregido para los botones de WhatsApp y contacto
+    document.addEventListener("DOMContentLoaded", () => {
+      // Configuración
+      const CONFIG = {
+        whatsappNumber: "573205318658",
+        phoneNumber: "573205318658", // Sin el + para evitar problemas
       };
 
-      // Función para llamar por teléfono
-      const makePhoneCall = (): void => {
-        window.open(`tel:${CONFIG.phoneNumber}`, '_self');
+      // Mensajes más cortos y directos
+      const MESSAGES = {
+        whatsappDemo:
+          "Hola! Vengo de la página web y necesito información sobre el software para asociaciones. ¿Podemos agendar una demo?",
+        whatsappTrial:
+          "Hola! Quiero información sobre la prueba gratuita de 30 días del software para asociaciones.",
+      };
+
+      // Función para abrir WhatsApp (método más confiable)
+      const openWhatsApp = (message) => {
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappURL = `https://api.whatsapp.com/send?phone=${CONFIG.whatsappNumber}&text=${encodedMessage}`;
+
+        // Abrir en nueva ventana
+        const newWindow = window.open(
+          whatsappURL,
+          "noopener,noreferrer",
+        );
+
+        // Fallback si no se abre
+        if (!newWindow) {
+          // Intentar con wa.me como alternativa
+          window.location.href = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodedMessage}`;
+        }
+      };
+
+      // Función para hacer llamada telefónica
+      const makePhoneCall = () => {
+        window.location.href = `tel:+${CONFIG.phoneNumber}`;
       };
 
       // Función para mostrar formulario
-      const showForm = (): void => {
-        formularioContacto?.classList.remove('hidden');
-        formularioContacto?.scrollIntoView({ 
-          behavior: 'smooth',
-          block: 'start'
-        });
+      const showForm = () => {
+        const formulario = document.getElementById("formularioContacto");
+        if (formulario) {
+          formulario.classList.remove("hidden");
+          formulario.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
       };
 
       // Función para ocultar formulario
-      const hideForm = (): void => {
-        formularioContacto?.classList.add('hidden');
-        window.scrollTo({ 
-          top: 0, 
-          behavior: 'smooth' 
-        });
+      const hideForm = () => {
+        const formulario = document.getElementById("formularioContacto");
+        if (formulario) {
+          formulario.classList.add("hidden");
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
       };
 
-      // Event Listeners - Botones principales
-      btnDemoPersonalizada?.addEventListener('click', () => {
-        openWhatsApp(MESSAGES.whatsappDemo);
-      });
+      // Event Listeners para botones principales (Hero section)
+      const btnDemoPersonalizada = document.getElementById(
+        "btnDemoPersonalizadademo",
+      );
+      const btnPruebaRapida = document.getElementById("btnPruebaRapidademo");
 
-      btnPruebaRapida?.addEventListener('click', () => {
-        openWhatsApp(MESSAGES.whatsappTrial);
-      });
+      if (btnDemoPersonalizada) {
+        btnDemoPersonalizada.addEventListener("click", (e) => {
+          e.preventDefault();
+          console.log("Botón Demo Personalizada clickeado");
+          openWhatsApp(MESSAGES.whatsappDemo);
+        });
+      }
 
-      // Event Listeners - Sección de contacto
-      btnWhatsApp?.addEventListener('click', () => {
-        openWhatsApp(MESSAGES.whatsappDemo);
-      });
+      if (btnPruebaRapida) {
+        btnPruebaRapida.addEventListener("click", (e) => {
+          e.preventDefault();
+          console.log("Botón Prueba Rápida clickeado");
+          openWhatsApp(MESSAGES.whatsappTrial);
+        });
+      }
 
-      btnLlamar?.addEventListener('click', () => {
-        makePhoneCall();
-      });
+      // Event Listeners para sección de contacto
+      const btnWhatsApp = document.getElementById("btnWhatsApp");
+      const btnLlamar = document.getElementById("btnLlamar");
+      const btnFormulario = document.getElementById("btnFormulario");
+      const btnCerrarFormulario = document.getElementById(
+        "btnCerrarFormulario",
+      );
 
-      btnFormulario?.addEventListener('click', () => {
-        showForm();
-      });
+      if (btnWhatsApp) {
+        btnWhatsApp.addEventListener("click", (e) => {
+          e.preventDefault();
+          console.log("Botón WhatsApp clickeado");
+          openWhatsApp(MESSAGES.whatsappDemo);
+        });
+      }
 
-      btnCerrarFormulario?.addEventListener('click', () => {
-        hideForm();
-      });
+      if (btnLlamar) {
+        btnLlamar.addEventListener("click", (e) => {
+          e.preventDefault();
+          console.log("Botón Llamar clickeado");
+          makePhoneCall();
+        });
+      }
+
+      if (btnFormulario) {
+        btnFormulario.addEventListener("click", (e) => {
+          e.preventDefault();
+          console.log("Botón Formulario clickeado");
+          showForm();
+        });
+      }
+
+      if (btnCerrarFormulario) {
+        btnCerrarFormulario.addEventListener("click", (e) => {
+          e.preventDefault();
+          console.log("Botón Cerrar Formulario clickeado");
+          hideForm();
+        });
+      }
 
       // Manejo del formulario de contacto
-      contactForm?.addEventListener('submit', async (e: Event) => {
-        e.preventDefault();
-        
-        const formData = new FormData(contactForm);
-        const data: Record<string, string> = {};
-        
-        // Recopilar datos del formulario
-        for (const [key, value] of formData.entries()) {
-          data[key] = value.toString();
-        }
-        
-        console.log('Datos del formulario:', data);
-        
-        // Crear mensaje para WhatsApp con los datos del formulario
-        const whatsappFormMessage = encodeURIComponent(
-          `🚨 FORMULARIO DE CONTACTO URGENTE\n\n` +
-          `👤 Nombre: ${data.nombre}\n` +
-          `📱 Teléfono: ${data.telefono}\n` +
-          `🏢 Asociación: ${data.asociacion}\n` +
-          `📍 Municipio: ${data.municipio}\n` +
-          `🌱 Productos: ${data.productos}\n` +
-          `👥 Asociados: ${data.asociados}\n` +
-          `⚠️ Problema principal: ${data.problemas}\n` +
-          `🕐 Horario preferido: ${data.horario}\n\n` +
-          `Por favor contáctenme URGENTE para la demo personalizada.`
-        );
-        
-        // Enviar por WhatsApp
-        openWhatsApp(whatsappFormMessage);
-        
-        // Mostrar mensaje de éxito
-        alert('¡Perfecto! Tu solicitud ha sido enviada por WhatsApp. Te contactaremos en menos de 1 hora.');
-        
-        // Opcional: resetear formulario
-        contactForm.reset();
-        
-        // Opcional: ocultar formulario después de envío
-        // hideForm();
-      });
+      const contactForm = document.getElementById("contactForm");
+      if (contactForm) {
+        contactForm.addEventListener("submit", (e) => {
+          e.preventDefault();
 
-      // Animaciones y efectos adicionales
-      const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-      };
+          const formData = new FormData(contactForm);
+          const data = {};
 
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('animate-fade-in');
+          for (const [key, value] of formData.entries()) {
+            data[key] = value.toString();
           }
+
+          console.log("Datos del formulario:", data);
+
+          // Mensaje más corto para WhatsApp
+          const whatsappFormMessage = `Hola! Soy ${data.nombre} de ${data.asociacion} en ${data.municipio}. Necesito información sobre el software. Mi problema: ${data.problemas}. Teléfono: ${data.telefono}`;
+
+          openWhatsApp(whatsappFormMessage);
+
+          alert(
+            "¡Perfecto! Tu solicitud ha sido enviada. Te contactaremos pronto.",
+          );
+          contactForm.reset();
         });
-      }, observerOptions);
+      }
 
-      // Observar elementos para animaciones
-      document.querySelectorAll('.group').forEach(el => {
-        observer.observe(el);
-      });
+      // Debug: Verificar que los elementos existen
+      console.log("Elementos encontrados:");
+      console.log("btnDemoPersonalizada:", !!btnDemoPersonalizada);
+      console.log("btnPruebaRapida:", !!btnPruebaRapida);
+      console.log("btnWhatsApp:", !!btnWhatsApp);
+      console.log("btnLlamar:", !!btnLlamar);
+      console.log("btnFormulario:", !!btnFormulario);
     });
-
     // Función para tracking de eventos (opcional)
-    const trackEvent = (action: string, category: string = 'Demo Page'): void => {
+    const trackEvent = (
+      action: string,
+      category: string = "Demo Page",
+    ): void => {
       // Aquí puedes agregar Google Analytics, Facebook Pixel, etc.
       console.log(`Event tracked: ${category} - ${action}`);
     };
 
     // CSS adicional para animaciones
-    const style = document.createElement('style');
+    const style = document.createElement("style");
     style.textContent = `
       .animate-fade-in {
         animation: fadeIn 0.6s ease-in-out forwards;
