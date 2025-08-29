@@ -6,7 +6,7 @@ export const menuMain: MainMenuItem[] = [
 		label: "Home",
 		url: "/",
 	},
-	{
+	/*{
 		id: "solu",
 		label: "Soluciones",
 		url: "/soluciones",
@@ -33,7 +33,7 @@ export const menuMain: MainMenuItem[] = [
 		id: "blog",
 		label: "Blog",
 		url: "/blog",
-	},
+	},*/
 ];
 
 export const menuNavigation: MenuNavigation = {
